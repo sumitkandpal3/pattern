@@ -503,5 +503,5 @@ int main()
     // pattern25(n);
     // pattern26(n);
     // pattern27(n);
-    pattern28(n);
+    //pattern28(n);
 }

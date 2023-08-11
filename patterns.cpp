@@ -18,6 +18,8 @@ void pattern1(int n)
     }
 }
 
+
+
 void pattern2(int n)
 {
     int i = 0;
@@ -471,6 +473,35 @@ void pattern28(int n){
     
 }
 
+void pattern29(int n)
+{
+    
+    int j, a = 0;
+    for (int i = 1; i <= n; i++)
+    {
+        if (i % 2 != 0)
+        {
+            for (j = a + 1; j < a + i; j++)
+            {
+                cout << j << "*";
+            }
+            cout << j++;
+            a = j;
+        }
+        else
+        {
+            a = a + i - 1;
+
+            for (j = a; j > a - i + 1; j--)
+            {
+                cout << j << "*";
+            }
+            cout << j;
+        }
+        cout << endl;
+    }
+}
+
 int main()
 {
     int n;
@@ -504,4 +535,5 @@ int main()
     // pattern26(n);
     // pattern27(n);
     //pattern28(n);
+    //pattern29(n);
 }
